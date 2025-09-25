@@ -12,6 +12,7 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+      padding: 1rem;
     }
 
     .card {
@@ -19,12 +20,12 @@
       padding: 2rem;
       border-radius: 20px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-      max-width: 350px;
+      max-width: 320px;
       text-align: center;
     }
 
     .name {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       font-weight: bold;
       color: rgb(32, 30, 30);
       text-transform: uppercase;
@@ -33,23 +34,23 @@
 
     .title {
       font-style: italic;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #444;
       margin-bottom: 0.5rem;
     }
 
     .location {
       color: #777;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       margin-bottom: 1.5rem;
     }
          
-    .bio{
-        margin-top: 1.2rem;
-        font-weight: bold;
-        text-decoration-color: #444;
-        text-decoration-thickness: 2px;
-      }
+    .bio {
+      margin-top: 1.2rem;
+      font-weight: bold;
+      text-decoration-color: #444;
+      text-decoration-thickness: 2px;
+    }
 
     .list-title {
       margin-top: 1.2rem;
@@ -68,6 +69,61 @@
     ul li {
       margin: 0.3rem 0;
     }
+
+    /* =====================
+       Responsive breakpoints
+       ===================== */
+
+    /* md - tablets (≥768px) */
+    @media (min-width: 768px) {
+      .card {
+        max-width: 400px;
+        padding: 2.5rem;
+      }
+      .name {
+        font-size: 1.8rem;
+      }
+      .title {
+        font-size: 1.2rem;
+      }
+      .location {
+        font-size: 1rem;
+      }
+    }
+
+    /* lg - large tablets/small desktops (≥1024px) */
+    @media (min-width: 1024px) {
+      .card {
+        max-width: 500px;
+        padding: 3rem;
+      }
+      .name {
+        font-size: 2rem;
+      }
+      .title {
+        font-size: 1.3rem;
+      }
+      .location {
+        font-size: 1.1rem;
+      }
+    }
+
+    /* xl - desktops (≥1280px) */
+    @media (min-width: 1280px) {
+      .card {
+        max-width: 600px;
+        padding: 3.5rem;
+      }
+      .name {
+        font-size: 2.2rem;
+      }
+      .title {
+        font-size: 1.5rem;
+      }
+      .location {
+        font-size: 1.2rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -77,9 +133,10 @@
     <div class="location">Lives in Calaca City</div>
 
     <div class="bio">
-        I’m a student who believes in the power of hard work and perseverance.</div>
+        I’m a student who believes in the power of hard work and perseverance.
+    </div>
     
-        <div class="list-title">Things I enjoy:</div>
+    <div class="list-title">Things I enjoy:</div>
     <ul>
       <li>Sketching portraits</li>
       <li>Travel</li>
