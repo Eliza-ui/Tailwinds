@@ -4,83 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profile Card</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #21cea8;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .card {
-      background: white;
-      padding: 2rem;
-      border-radius: 20px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-      max-width: 350px;
-      text-align: center;
-    }
-
-    .name {
-      font-size: 1.8rem;
-      font-weight: bold;
-      color: rgb(32, 30, 30);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    .title {
-      font-style: italic;
-      font-size: 1.2rem;
-      color: #444;
-      margin-bottom: 0.5rem;
-    }
-
-    .location {
-      color: #777;
-      font-size: 0.9rem;
-      margin-bottom: 1.5rem;
-    }
-         
-    .bio{
-        margin-top: 1.2rem;
-        font-weight: bold;
-        text-decoration-color: #444;
-        text-decoration-thickness: 2px;
-      }
-
-    .list-title {
-      margin-top: 1.2rem;
-      font-weight: bold;
-      text-decoration-color: #444;
-      text-decoration-thickness: 2px;
-    }
-
-    ul {
-      list-style-position: inside;
-      text-align: left;
-      margin-top: 0.5rem;
-      padding-left: 1rem;
-    }
-
-    ul li {
-      margin: 0.3rem 0;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="card">
-    <div class="name">Eliza De Roxas</div>
-    <div class="title">College Student</div>
-    <div class="location">Lives in Calaca City</div>
+<body class="flex items-center justify-center min-h-screen bg-teal-400 font-sans">
+  <div class="bg-white p-8 rounded-2xl shadow-lg max-w-sm text-center">
+    <div class="text-2xl font-bold uppercase tracking-widest text-gray-800">Eliza De Roxas</div>
+    <div class="italic text-lg text-gray-600 mt-1">College Student</div>
+    <div class="text-sm text-gray-500 mb-6">Lives in Calaca City</div>
 
-    <div class="bio">
-        I’m a student who believes in the power of hard work and perseverance.</div>
-    
-        <div class="list-title">Things I enjoy:</div>
-    <ul>
+    <div class="font-semibold text-gray-800">
+      I’m a student who believes in the power of hard work and perseverance.
+    </div>
+
+    <div class="mt-4 font-semibold text-gray-800">Things I enjoy:</div>
+    <ul class="list-disc list-inside text-left text-gray-700 mt-2 space-y-1">
       <li>Sketching portraits</li>
       <li>Travel</li>
       <li>Hanging out with my Friends</li>
