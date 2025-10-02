@@ -7,22 +7,38 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="flex items-center justify-center min-h-screen bg-teal-400 font-sans">
-  <div class="bg-white p-8 rounded-2xl shadow-lg max-w-xs sm:max-w-sm md:max-w-md text-center">
+  <div class="bg-white p-8 rounded-2xl shadow-lg max-w-xs sm:max-w-sm md:max-w-md grid gap-6 text-center">
+    <!-- Profile Image -->
+    <div class="flex justify-center mb-4">
+      <img class="rounded-full w-24 h-24 object-cover border-4 border-teal-300" src="profile.jpg" alt="Eliza De Roxas">
+    </div>
+
+    <!-- Name and Role -->
     <div class="text-2xl font-bold uppercase tracking-widest text-gray-800">Eliza De Roxas</div>
     <div class="italic text-lg text-gray-600 mt-1">College Student</div>
     <div class="text-sm text-gray-500 mb-6">Lives in Calaca City</div>
 
+    <!-- Bio -->
     <div class="font-semibold text-gray-800">
       I’m a student who believes in the power of hard work and perseverance.
     </div>
 
-    <div class="mt-4 font-semibold text-gray-800">Things I enjoy:</div>
-    <ul class="list-disc list-inside text-left text-gray-700 mt-2 space-y-1">
-      <li>Sketching portraits</li>
-      <li>Travel</li>
-      <li>Hanging out with my Friends</li>
-      <li>Listening to classical music</li>
-    </ul>
+    <!-- "Things I Want to Do" in Grid -->
+    <div class="mt-4 font-semibold text-gray-800">Things I want to do:</div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-2">
+      <div class="text-sm text-gray-700 border rounded-lg p-2">Travel to Japan</div>
+      <div class="text-sm text-gray-700 border rounded-lg p-2">Learn a new language</div>
+      <div class="text-sm text-gray-700 border rounded-lg p-2">Start a YouTube channel</div>
+      <div class="text-sm text-gray-700 border rounded-lg p-2">Write a book</div>
+      <div class="text-sm text-gray-700 border rounded-lg p-2">Learn to play piano</div>
+      <div class="text-sm text-gray-700 border rounded-lg p-2">Volunteer for a cause</div>
+      <div class="text-sm text-gray-700 border rounded-lg p-2">Go skydiving</div>
+      <div class="text-sm text-gray-700 border rounded-lg p-2">Run a marathon</div>
+      <div class="text-sm text-gray-700 border rounded-lg p-2">Visit all continents</div>
+      <div class="text-sm text-gray-700 border rounded-lg p-2">Cook gourmet meals</div>
+      <div class="text-sm text-gray-700 border rounded-lg p-2">Attend a concert</div>
+      <div class="text-sm text-gray-700 border rounded-lg p-2">Take a road trip</div>
+    </div>
   </div>
 </body>
 </html>
